@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Minha Loja Virtual</h1>
+    </header>
+    <aside>
+        <h2>Filtros</h2>
+        <div class="filters">
+            <label for="category">Categoria:</label>
+            <select id="category">
+                <option value="all">Todos</option>
+                <option value="electronics">Eletrônicos</option>
+                <option value="fashion">Moda</option>
+                <option value="books">Livros</option>
+            </select>
+
+            <label for="price-range">Faixa de Preço:</label>
+            <input type="range" id="price-range" min="0" max="1000" step="10">
+            <span id="price-value">0 - 1000</span>
+        </div>
+    </aside>
+    <main>
+        <h2>Produtos</h2>
+        <div class="sorting">
+            <label for="sort">Ordenar por:</label>
+            <select id="sort">
+                <option value="price-asc">Preço: Menor para Maior</option>
+                <option value="price-desc">Preço: Maior para Menor</option>
+                <option value="name-asc">Nome: A-Z</option>
+                <option value="name-desc">Nome: Z-A</option>
+            </select>
+        </div>
+        <div class="product-grid">
+            <!-- Produtos serão inseridos aqui -->
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
